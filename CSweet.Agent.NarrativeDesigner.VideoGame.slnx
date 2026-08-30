@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="src/CSweet.Agent.NarrativeDesigner.VideoGame/CSweet.Agent.NarrativeDesigner.VideoGame.csproj" />
+  <Project Path="tests/CSweet.Agent.NarrativeDesigner.VideoGame.Tests/CSweet.Agent.NarrativeDesigner.VideoGame.Tests.csproj" />
+</Solution>
