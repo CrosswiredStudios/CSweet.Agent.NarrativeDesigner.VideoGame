@@ -14,7 +14,7 @@
   },
   "id": "com.csweet.video-game-narrative-designer",
   "name": "Nadia Ellis",
-  "version": "2.5.1",
+  "version": "3.0.0",
   "publisher": {
     "id": "com.csweet",
     "name": "C-Sweet"
@@ -34,7 +34,7 @@
   },
   "provides": [
     {
-      "name": "work.execution.run.v2",
+      "name": "work.execution.run",
       "description": "Execute the authoritative task or delivery-plan scope with exact revision evidence and independent QA.",
       "inputSchema": {
         "type": "object",
@@ -256,51 +256,6 @@
         "additionalProperties": false
       },
       "executionTimeoutSeconds": 3600,
-      "idempotency": "work-item",
-      "riskClass": "standard"
-    },
-    {
-      "name": "work.execution.run.v1",
-      "description": "Owns world, story, characters, dialogue, narrative systems, and implementation specifications.",
-      "inputSchema": {
-        "type": "object",
-        "required": [
-          "sprintExecutionId",
-          "itemExecutionId",
-          "stageExecutionId",
-          "attemptId",
-          "organizationId",
-          "boardId",
-          "sprintId",
-          "itemId",
-          "assignmentRevision",
-          "boardKey",
-          "itemIdentifier",
-          "policyRevisionId",
-          "stageKey",
-          "traversal",
-          "attempt",
-          "deadline",
-          "instructions",
-          "item",
-          "input",
-          "priorOutcomes",
-          "evidence"
-        ],
-        "properties": {},
-        "additionalProperties": true
-      },
-      "outputSchema": {
-        "type": "object",
-        "properties": {
-          "message": {
-            "type": "string"
-          }
-        },
-        "required": [],
-        "additionalProperties": true
-      },
-      "executionTimeoutSeconds": 30,
       "idempotency": "work-item",
       "riskClass": "standard"
     },
